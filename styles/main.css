@@ -1,0 +1,248 @@
+/*Fonts
+.....................................................*/
+@font-face {
+    font-family: 'Helvetica Neue LT Std';
+    src: url('../fonts/HelveticaNeueLTStd-ThCn.woff2') format('woff2'),
+    url('../fonts/HelveticaNeueLTStd-ThCn.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Italic.woff2') format('woff2'),
+    url('../fonts/OpenSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Light.woff2') format('woff2'),
+    url('../fonts/OpenSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Footer
+..............................................................*/
+
+
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+}
+
+
+input, textarea{
+    border: 0;
+    outline: 0;
+    margin: 0;
+}
+
+footer{
+    background: url("../images/footer-background.jpg") ;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+.container{
+    width: 770px;
+    margin: 0 auto;
+}
+
+.contacts{
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+
+.contacts__title{
+    font-family: "Helvetica Neue LT Std", serif;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(231, 97, 34);
+    text-transform: uppercase;
+    font-size: 48px;
+    line-height: 0.5;
+}
+
+.contacts__subtitle{
+    padding-top: 16px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 18px;
+    line-height: 1.333;
+    color: rgb(255, 255, 255);
+}
+
+.social{
+    padding-top: 25px;
+    justify-content: center;
+    display: flex;
+}
+
+.social__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    transition: 0.2s ease;
+    border-radius: 50%;
+    width: 41px;
+    height: 41px;
+}
+
+.social__link:hover{
+    background-color: #454547;
+}
+
+.facebook{
+    background-color: rgb(83, 120, 188);
+}
+
+.twitter{
+    background-color: rgb(54, 208, 247);
+}
+
+.linkedin{
+    background-color: rgb(0, 122, 181);
+}
+
+.pinterest{
+    background-color: rgb(233, 42, 42);
+}
+
+.feedback{
+    margin-top: 29px;
+}
+
+.feedback__title{
+    color: rgb(231, 97, 34);
+    line-height: 0.8;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Helvetica Neue LT Std", serif;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.feedback__subtitle{
+
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-style: italic;
+    line-height: 1.714;
+    padding-top: 23px;
+    text-align: center;
+    font-family: "Open Sans", serif;
+    font-weight: 300;
+}
+
+.feedback__form{
+    padding-top: 36px;
+    overflow: hidden;
+}
+
+.grid-container {
+    display: grid;
+    row-gap: 15px;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr 1fr auto;
+    grid-template-areas: "form-name form-message" "form-email form-message" "form-phone form-message" "form-submit form-submit";}
+
+.form-name { grid-area: form-name; }
+
+.form-email { grid-area: form-email; }
+
+.form-phone { grid-area: form-phone; }
+
+.form-message { grid-area: form-message; }
+
+.form-submit { grid-area: form-submit; }
+
+.form-element{
+    margin-right:15px;
+}
+
+.form-element input{
+    padding: 15px;
+    width: 100%;
+    height: 45px;
+}
+
+.form-massage{
+    padding: 15px;
+    margin-left: 15px;
+    border-radius: 3px;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.form-submit {
+    display: flex;
+    justify-content: center;
+}
+
+.form-submit button{
+    border-radius: 5px;
+    background-color: rgb(93, 189, 177);
+    padding: 0 32px;
+    line-height: 45px;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 15px;
+    border: 0;
+}
+
+.strip{
+    opacity: 0.7;
+    width: 881px;
+    margin: 100px auto 0;
+}
+
+.copyright__title{
+    margin-top: 30px;
+    font-size: 13px;
+    line-height: 1.846;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.arrow {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
